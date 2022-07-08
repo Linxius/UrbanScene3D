@@ -1,1 +1,8 @@
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme
+title: UrbanScene3D
+# description: [UrbanScene3D, a large-scale data platform for research of urban scene perception and reconstruction.]
+show_downloads: [true]
+school: [Shenzhen Univerisity]
