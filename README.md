@@ -26,6 +26,13 @@ path_to_exe path_to_gt_points path_to_recon_points
 The [Unreal Engine](https://docs.unrealengine.com/en-US/index.html) simulator with all the virual and real scenes can be downloaded at: [Baidu](https://pan.baidu.com/s/1ROx5LV7tG3w9FQxddu3yMA?pwd=ggjw).
 Install the [AirSim](https://microsoft.github.io/AirSim/apis/) plugin to capture your desired data.
 
+## Copyright
+UrbanScene3D is publicly accessible for non-commercial uses only. Permission is granted to use the data only if you agree:
+- The dataset is provided "AS IS". Despite our best efforts to assure accuracy, we disclaim all liability for any mistakes or omissions;
+- All works that utilize this dataset including any partial use must include a reference to it. Please correctly cite our ECCV22 publication in research papers using the information provided below;
+- You refrain from disseminating this dataset or any altered variations;
+- You are not permitted to utilize this dataset or any derivative work for any commercial endeavors;
+- We reserve all rights that are not explicitly granted to you.
 
 ## BibTeX
 ```
