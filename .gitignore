@@ -1,4 +1,6 @@
-*.ini
+_site/
+Gemfile.lock
+.ini
 .vscode
 *build*/
 output/
