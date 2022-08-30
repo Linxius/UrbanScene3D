@@ -26,6 +26,17 @@ path_to_exe path_to_gt_points path_to_recon_points
 The [Unreal Engine](https://docs.unrealengine.com/en-US/index.html) simulator with all the virual and real scenes can be downloaded at: [Baidu](https://pan.baidu.com/s/1ROx5LV7tG3w9FQxddu3yMA?pwd=ggjw).
 Install the [AirSim](https://microsoft.github.io/AirSim/apis/) plugin to capture your desired data.
 
+## UrbanScene3D-V1
+[Dropbox](https://www.dropbox.com/sh/mg8pvzwmufpfug3/AADK2C8Zrtlf73tNyUvOJJCka?dl=0)
+
+or download seperately from our nas (maybe unstable sometimes):
+- [Residence](http://szuvccnas.quickconnect.cn/d/s/lSvWkTMbFjecrEwZDx3cV72M5scS2tKA/OxnMJCCChFCGAqEHfVC09VJmO_f-qrga-_LFAaeS27Ag)
+- [Campus](http://szuvccnas.quickconnect.cn/d/s/lRrBh8QyqmVQnXgn6Lc41vqnpeZej5bm/Xj3MGE2nOmr9CR_q09lJzYzmtcUGc5XQ-67Hgr9-27Ag)
+- [Sci-Art](http://szuvccnas.quickconnect.cn/d/s/lT61obCnx48mOc1FrPtUiuZ8eNCOrEQd/27C8eKMNd1YBpLxJTbYY-jMWU7vRHhbs-5bHAJ9227Ag)
+- [Square](http://szuvccnas.quickconnect.cn/d/s/lTcdgzIR95FcFWgXkDBe92EyyjqMHsLy/8fIBdxxvlvckRk3puqWRPlFzG1-BDsU1-27Hgxdq27Ag)
+- [Hospital](http://szuvccnas.quickconnect.cn/d/s/lTGZSjPziNZmEUIXnEt8uuT8RyoU44Xg/2RM7OW3HnC_1qDXzsJWXi6QN94DsSc3H-tbHgAMG27Ag)
+
+
 ## Copyright
 UrbanScene3D is publicly accessible for non-commercial uses only. Permission is granted to use the data only if you agree:
 - The dataset is provided "AS IS". Despite our best efforts to assure accuracy, we disclaim all liability for any mistakes or omissions;
