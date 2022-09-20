@@ -1,6 +1,6 @@
 # Capturing, Reconstructing, and Simulating: the UrbanScene3D Dataset
 
-This is the official repository of our ECCV22 dataset UrbanScene3D. Please refer to our [project page](https://vcc.tech/UrbanScene3D/) for more information.
+This is the official repository of our ECCV22 dataset UrbanScene3D. Please refer to our [project page](https://vcc.tech/UrbanScene3D) for more information.
 
 The whole dataset can be download with [Dropbox](https://www.dropbox.com/sh/8g2urrij2fercko/AABi0GclI-f96uYsAdP0D0Yga?dl=0), [Google Drive](https://drive.google.com/drive/folders/1e91lEw56DUBbQgRTo48T3lVjo53SzEOd?usp=sharing), or [Baidu Yun](https://pan.baidu.com/s/1nqurXpbMzFo_-Cmf6eheOw?pwd=7zdg).
 
