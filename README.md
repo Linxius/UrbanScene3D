@@ -13,13 +13,13 @@ install the [AirSim](https://microsoft.github.io/AirSim/apis/) plugin to capture
 ```
 image_name,x,y,z,pitch,roll,yaw
 ```
-The provided path files in our dataset are in UE coordinate system, a left-handed, Z-Up coordinate system.
+The provided path files in our dataset are in UE coordinate system, a left-handed, Z-Up coordinate system (in mm).
 
-Each capturing of synthetic scenes comes with a path file. The captured images of real scenes are recorded with GPS information.
+Each capturing of synthetic scenes comes with a path file and a captured image set. The captured images of real scenes are recorded with GPS information.
 
 ## Image capturing
 For your convenience,
-we provide seperate image capturing programs (exe) in a [zip file](https://www.dropbox.com/sh/pw09ebaa6k4phzr/AABsXdqRusZp7WEtQ7qWledOa?dl=0) for the four synthetic scenes in the benchmark. 
+we provide seperate image capturing programs (exe) (in this [zip file](https://www.dropbox.com/sh/pw09ebaa6k4phzr/AABsXdqRusZp7WEtQ7qWledOa?dl=0)) for the four synthetic scenes in the benchmark. 
 
 Setup the path file and the directory of output files in `./cg_3_zuizhong/Saved/Config/WindowsNoEditor/Game.ini`:
 ```ini
@@ -30,17 +30,6 @@ Path=path_to_path_file
 Path=direcotry_of_output_images
 ```
 and run `cg_3_zuizhong.exe` to capture images.
-
-## UrbanScene3D-V1
-The data of UrbanScene3D version 1 are available at
-[Dropbox](https://www.dropbox.com/sh/mg8pvzwmufpfug3/AADK2C8Zrtlf73tNyUvOJJCka?dl=0).
-
-or download seperately from our nas (more friendly for Chinese users, but maybe (quite) unstable sometimes):
-- [Residence](http://szuvccnas.quickconnect.cn/d/s/lSvWkTMbFjecrEwZDx3cV72M5scS2tKA/OxnMJCCChFCGAqEHfVC09VJmO_f-qrga-_LFAaeS27Ag)
-- [Campus](http://szuvccnas.quickconnect.cn/d/s/lRrBh8QyqmVQnXgn6Lc41vqnpeZej5bm/Xj3MGE2nOmr9CR_q09lJzYzmtcUGc5XQ-67Hgr9-27Ag)
-- [Sci-Art](http://szuvccnas.quickconnect.cn/d/s/lT61obCnx48mOc1FrPtUiuZ8eNCOrEQd/27C8eKMNd1YBpLxJTbYY-jMWU7vRHhbs-5bHAJ9227Ag)
-- [Square](http://szuvccnas.quickconnect.cn/d/s/lTcdgzIR95FcFWgXkDBe92EyyjqMHsLy/8fIBdxxvlvckRk3puqWRPlFzG1-BDsU1-27Hgxdq27Ag)
-- [Hospital](http://szuvccnas.quickconnect.cn/d/s/lTGZSjPziNZmEUIXnEt8uuT8RyoU44Xg/2RM7OW3HnC_1qDXzsJWXi6QN94DsSc3H-tbHgAMG27Ag)
 
 ## Evaluation 
 This reposity contains the source code of evaluation reconstructed models used in the [UrbanScene3D](https://vcc.tech/UrbanScene3D/) for your reference. Please download the [complied version](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) for windows:x64 with real scene evaluation data.
@@ -61,6 +50,17 @@ with gt_points and recon_points sampled on gt models and reconstructed models:
 ```
 path_to_exe path_to_gt_points path_to_recon_points
 ```
+
+## UrbanScene3D-V1
+The data of UrbanScene3D version 1 are available at
+[Dropbox](https://www.dropbox.com/sh/mg8pvzwmufpfug3/AADK2C8Zrtlf73tNyUvOJJCka?dl=0).
+
+or download seperately from our nas (more friendly for Chinese users, but maybe (quite) unstable sometimes):
+- [Residence](http://szuvccnas.quickconnect.cn/d/s/lSvWkTMbFjecrEwZDx3cV72M5scS2tKA/OxnMJCCChFCGAqEHfVC09VJmO_f-qrga-_LFAaeS27Ag)
+- [Campus](http://szuvccnas.quickconnect.cn/d/s/lRrBh8QyqmVQnXgn6Lc41vqnpeZej5bm/Xj3MGE2nOmr9CR_q09lJzYzmtcUGc5XQ-67Hgr9-27Ag)
+- [Sci-Art](http://szuvccnas.quickconnect.cn/d/s/lT61obCnx48mOc1FrPtUiuZ8eNCOrEQd/27C8eKMNd1YBpLxJTbYY-jMWU7vRHhbs-5bHAJ9227Ag)
+- [Square](http://szuvccnas.quickconnect.cn/d/s/lTcdgzIR95FcFWgXkDBe92EyyjqMHsLy/8fIBdxxvlvckRk3puqWRPlFzG1-BDsU1-27Hgxdq27Ag)
+- [Hospital](http://szuvccnas.quickconnect.cn/d/s/lTGZSjPziNZmEUIXnEt8uuT8RyoU44Xg/2RM7OW3HnC_1qDXzsJWXi6QN94DsSc3H-tbHgAMG27Ag)
 
 
 ## Copyright
