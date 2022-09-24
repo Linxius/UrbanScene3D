@@ -34,6 +34,26 @@ and run `cg_3_zuizhong.exe` to capture images.
 ## Evaluation 
 This reposity contains the source code of evaluation reconstructed models used in the [UrbanScene3D](https://vcc.tech/UrbanScene3D/) for your reference. Please download the [complied version](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) for windows:x64 with real scene evaluation data.
 
+The contained `.pointcloud` is only for evaluation program. Delete triangles that are not belong to the buildings and translate the reconstructed model to the corresponding bbox to evaluate it.
+
+bbox 
+```
+min_x, min_y, min_z
+max_x, max_y, max_z
+```
+
+for PolyTech:
+```
+-16.4756 -12.6849 -2.9153
+196.8354 165.3059 52.3150
+```
+
+for ArtiSci:
+```
+-604.3266 895.3274 16.4413
+-358.6385 1056.4519 58.7454
+```
+
 ### Install
 
 dependency:
