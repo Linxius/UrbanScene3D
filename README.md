@@ -32,9 +32,14 @@ Path=direcotry_of_output_images
 and run `cg_3_zuizhong.exe` to capture images.
 
 ## Evaluation 
-This reposity contains the source code of evaluation reconstructed models used in the [UrbanScene3D](https://vcc.tech/UrbanScene3D/) for your reference. Please download the [complied version](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) for windows:x64 with real scene evaluation data.
+Please download the [complied version](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) for windows:x64 with real scene evaluation data.
 
-The contained `.pointcloud` is only for evaluation program. Delete triangles that are not belong to the buildings and translate the reconstructed model to the corresponding bbox to evaluate it.
+```
+path_to_exe p1 path_to_recon p3 path_to_gt
+```
+p1,p2: "mesh" or "points"
+
+The contained `.pointcloud` in [Evaluation_data](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) is only for evaluation program. Delete triangles that are not belong to the buildings and translate the reconstructed model to the corresponding bbox to evaluate it.
 
 bbox 
 ```
@@ -52,23 +57,6 @@ for ArtiSci:
 ```
 -604.3266 895.3274 16.4413
 -358.6385 1056.4519 58.7454
-```
-
-### Install
-
-dependency:
-- [vcpkg](https://github.com/microsoft/vcpkg) for C++ library (set your proxy environment variables for boosting download speed)
-
-install C++ libraries with vcpkg for example in bash 
-```
-vcpkg install --triplet=x64-windows boost eigen3 cgal tinyply tinyobjloader embree3 glog glm opencv tinyxml2 pthread
-```
-
-### Usage
-
-with gt_points and recon_points sampled on gt models and reconstructed models:
-```
-path_to_exe path_to_gt_points path_to_recon_points
 ```
 
 ## UrbanScene3D-V1
