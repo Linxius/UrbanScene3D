@@ -39,7 +39,7 @@ path_to_exe p1 path_to_recon p3 path_to_gt
 ```
 p1,p2: "mesh" or "points"
 
-The contained `.pointcloud` in [Evaluation_data](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) is only for evaluation program. Delete triangles that are not belong to the buildings and translate the reconstructed model to the corresponding bbox to evaluate it.
+The contained `.pointcloud` in [Evaluation_data](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation_data.zip) is only for evaluation program. Delete triangles that are not belong to the buildings and translate the reconstructed model to the corresponding bbox to evaluate it.
 
 bbox 
 ```
