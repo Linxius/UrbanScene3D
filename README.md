@@ -13,7 +13,7 @@ install the [AirSim](https://microsoft.github.io/AirSim/apis/) plugin to capture
 ```
 image_name,x,y,z,pitch,roll,yaw
 ```
-The provided path files in our dataset are in UE coordinate system, a left-handed, Z-Up coordinate system (in mm).
+The provided path files in our dataset are in UE coordinate system, a left-handed, Z-Up coordinate system (in cm).
 
 Each capturing of synthetic scenes comes with a path file and a captured image set. The captured images of real scenes are recorded with GPS information.
 
