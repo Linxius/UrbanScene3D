@@ -8,12 +8,13 @@ The whole dataset can be download with [Dropbox](https://www.dropbox.com/sh/8g2u
 All the synthetic scene and the reconstruction of real scenes are included in the simulator.
 Develop your own [Unreal Engine](https://www.unrealengine.com/) program to play with these scenes or
 install the [AirSim](https://microsoft.github.io/AirSim/apis/) plugin to capture your desired data.
+(Airsim use PlayerStart as origin.)
 
 ## Path format
 ```
 image_name,x,y,z,pitch,roll,yaw
 ```
-The provided path files in our dataset are in UE coordinate system, a left-handed, Z-Up coordinate system (in cm).
+The provided path files in our dataset are in UE (world) coordinate system, a left-handed, Z-Up coordinate system (in cm).
 
 Each capturing of synthetic scenes comes with a path file and a captured image set. The captured images of real scenes are recorded with GPS information.
 
