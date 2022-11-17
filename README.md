@@ -21,6 +21,7 @@ Each capturing of synthetic scenes comes with a path file and a captured image s
 ## Image capturing
 For your convenience,
 we provide seperate image capturing programs (exe) (in this [zip file](https://www.dropbox.com/sh/pw09ebaa6k4phzr/AABsXdqRusZp7WEtQ7qWledOa?dl=0)) for the four synthetic scenes in the benchmark. 
+(fov=60 resolution=6000*4000 for synthetic scenes. Real scenes come with different cameras, a camera calibration is needed to get the camera parameters accordingly.)
 
 Setup the path file and the directory of output files in `./cg_3_zuizhong/Saved/Config/WindowsNoEditor/Game.ini`:
 ```ini
