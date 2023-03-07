@@ -2,13 +2,17 @@
 
 This is the official repository of our ECCV22 dataset UrbanScene3D. Please refer to our [project page](https://vcc.tech/UrbanScene3D) for more information.
 
-The whole dataset can be download with [Dropbox](https://www.dropbox.com/sh/8g2urrij2fercko/AABi0GclI-f96uYsAdP0D0Yga?dl=0), [Google Drive](https://drive.google.com/drive/folders/1e91lEw56DUBbQgRTo48T3lVjo53SzEOd?usp=sharing), or [Baidu Yun](https://pan.baidu.com/s/1nqurXpbMzFo_-Cmf6eheOw?pwd=7zdg).
+The whole dataset can be downloaded with [Dropbox](https://www.dropbox.com/sh/8g2urrij2fercko/AABi0GclI-f96uYsAdP0D0Yga?dl=0), [Google Drive](https://drive.google.com/drive/folders/1e91lEw56DUBbQgRTo48T3lVjo53SzEOd?usp=sharing), or [Baidu Yun](https://pan.baidu.com/s/1nqurXpbMzFo_-Cmf6eheOw?pwd=7zdg).
 
 ## Simulator
-All the synthetic scene and the reconstruction of real scenes are included in the simulator.
-Develop your own [Unreal Engine](https://www.unrealengine.com/) program to play with these scenes or
+All the synthetic scenes and the reconstruction of real scenes are included in the simulator.
+Develop your [Unreal Engine](https://www.unrealengine.com/) program to play with these scenes or
 install the [AirSim](https://microsoft.github.io/AirSim/apis/) plugin to capture your desired data.
-(Airsim use PlayerStart as origin.)
+(Airsim uses PlayerStart as the origin.)
+
+Open UrbanScene.uproject and rebuild the project. All the scenes are located in Contents/Maps in the Content Browser.
+
+The models of the large-scale virtual scenes are not provided due to the copyright issue and the textured meshes can not be exported from Simulator(UE). We provide [sampled points](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/UrbanScene3D-virtual_cities-sampled.7z) for them for evaluation purpose.
 
 ## Path format
 ```
@@ -16,11 +20,11 @@ image_name,x,y,z,pitch,roll,yaw
 ```
 The provided path files in our dataset are in UE (world) coordinate system, a left-handed, Z-Up coordinate system (in cm).
 
-Each capturing of synthetic scenes comes with a path file and a captured image set. The captured images of real scenes are recorded with GPS information.
+Each capture of synthetic scenes comes with a path file and a captured image set. The captured images of real scenes are recorded with GPS information.
 
 ## Image capturing
 For your convenience,
-we provide seperate image capturing programs (exe) (in this [zip file](https://www.dropbox.com/sh/pw09ebaa6k4phzr/AABsXdqRusZp7WEtQ7qWledOa?dl=0)) for the four synthetic scenes in the benchmark. 
+we provide separate image-capturing programs (in this [zip file](https://www.dropbox.com/sh/pw09ebaa6k4phzr/AABsXdqRusZp7WEtQ7qWledOa?dl=0)) for the four synthetic scenes in the benchmark. 
 
 fov=60 resolution=6000*4000 for synthetic scenes. Real scenes come with different cameras, a camera calibration is needed to get the camera parameters accordingly.
 
@@ -35,14 +39,14 @@ Path=direcotry_of_output_images
 and run `cg_3_zuizhong.exe` to capture images.
 
 ## Evaluation 
-Please download the [complied version](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) for windows:x64 with real scene evaluation data.
+Please download the [compiled version](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) for windows:x64 with real scene evaluation data.
 
 ```
 path_to_exe p1 path_to_recon p3 path_to_gt
 ```
 p1,p2: "mesh" or "points"
 
-The contained `.pointcloud` in [Evaluation_data](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation_data.zip) is only for evaluation program. Delete triangles that are not belong to the buildings and translate the reconstructed model to the corresponding bbox to evaluate it.
+The contained `.pointcloud` in [Evaluation_data](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation_data.zip) is only for the evaluation program. Delete triangles that don't belong to the buildings and translate the reconstructed model to the corresponding bbox to evaluate it.
 
 bbox 
 ```
@@ -63,10 +67,10 @@ for ArtiSci:
 ```
 
 ## UrbanScene3D-V1
-The data of UrbanScene3D version 1 are available at
+The data of UrbanScene3D version 1 are available on
 [Dropbox](https://www.dropbox.com/sh/mg8pvzwmufpfug3/AADK2C8Zrtlf73tNyUvOJJCka?dl=0).
 
-or download seperately from our nas (more friendly for Chinese users, but maybe (quite) unstable sometimes):
+or download separately from our NAS (more friendly for Chinese users, but maybe (quite) unstable sometimes):
 - [Residence](http://szuvccnas.quickconnect.cn/d/s/lSvWkTMbFjecrEwZDx3cV72M5scS2tKA/OxnMJCCChFCGAqEHfVC09VJmO_f-qrga-_LFAaeS27Ag)
 - [Campus](http://szuvccnas.quickconnect.cn/d/s/lRrBh8QyqmVQnXgn6Lc41vqnpeZej5bm/Xj3MGE2nOmr9CR_q09lJzYzmtcUGc5XQ-67Hgr9-27Ag)
 - [Sci-Art](http://szuvccnas.quickconnect.cn/d/s/lT61obCnx48mOc1FrPtUiuZ8eNCOrEQd/27C8eKMNd1YBpLxJTbYY-jMWU7vRHhbs-5bHAJ9227Ag)
