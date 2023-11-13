@@ -68,7 +68,8 @@ for ArtiSci:
 
 ## UrbanScene3D-V1
 The data of UrbanScene3D version 1 are available on
-[Dropbox](https://www.dropbox.com/sh/mg8pvzwmufpfug3/AADK2C8Zrtlf73tNyUvOJJCka?dl=0).
+[Dropbox](https://www.dropbox.com/sh/mg8pvzwmufpfug3/AADK2C8Zrtlf73tNyUvOJJCka?dl=0)
+[BaiduYun](https://pan.baidu.com/s/13OQej3m7rihxwUbGuY9ACQ?pwd=fb7j)
 
 or download separately from our NAS (more friendly for Chinese users, but maybe (quite) unstable sometimes):
 - [Residence](http://szuvccnas.quickconnect.cn/d/s/lSvWkTMbFjecrEwZDx3cV72M5scS2tKA/OxnMJCCChFCGAqEHfVC09VJmO_f-qrga-_LFAaeS27Ag)
