@@ -39,32 +39,20 @@ Path=direcotry_of_output_images
 and run `cg_3_zuizhong.exe` to capture images.
 
 ## Evaluation 
-Please download the [compiled version](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) for windows:x64 with real scene evaluation data.
+Please download the [compiled version](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation.zip) for the evaluation on windows:x64.
 
 ```
-path_to_exe p1 path_to_recon p3 path_to_gt
+evaluate_model.exe p1 path_to_recon p3 path_to_gt
 ```
-p1,p2: "mesh" or "points"
+p1,p3: "mesh" or "points"
 
-The contained `.pointcloud` in [Evaluation_data](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation_data.zip) is only for the evaluation program. Delete triangles that don't belong to the buildings and translate the reconstructed model to the corresponding bbox to evaluate it.
-
-bbox 
+The contained `.pointcloud` in real scene evaluation [data](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/Evaluation_data.zip) is an encrypted format for the evaluation program. Download it and unzip it to `data/`. Delete triangles that don't belong to the buildings and pre-registrate the reconstructed model with the sparse point cloud [PolyTech1k](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/polytech1k.ply) or [ArtSci1k](https://github.com/Linxius/UrbanScene3D/releases/download/v0.0.1/artsci1k.ply) and then:
 ```
-min_x, min_y, min_z
-max_x, max_y, max_z
-```
-
-for PolyTech:
-```
--16.4756 -12.6849 -2.9153
-196.8354 165.3059 52.3150
+evaluate_model.exe p1 path_to_recon realscene data/artsci.pointcloud
+#or
+evaluate_model.exe p1 path_to_recon realscene data/polytech.pointcloud
 ```
 
-for ArtiSci:
-```
--604.3266 895.3274 16.4413
--358.6385 1056.4519 58.7454
-```
 
 ## UrbanScene3D-V1
 The data of UrbanScene3D version 1 are available on
